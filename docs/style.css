@@ -18,3 +18,10 @@ a {
 #blog-description{
   color: #202121;
 }
+#content {
+    background: none;
+}
+.categories a {
+    background-color: #9FD2D6;
+    color: #fff;
+}
