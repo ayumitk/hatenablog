@@ -3,9 +3,18 @@ body {
   background: #f4f7f6;
 }
 a {
-  color: #49c5b6 !important;
+  color: #49c5b6;
   transition: all 0.3s ease-in-out;
 }
 .hatena-module-title {
+  color: #202121;
+}
+.hatena-module-title a {
+  color: #202121;
+}
+#title a {
+  color: #202121;
+}
+#blog-description{
   color: #202121;
 }
