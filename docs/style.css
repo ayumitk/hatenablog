@@ -29,7 +29,7 @@ a {
   height: 34px;
 }
 .hatena-module-title {
-    border-bottom: 1px solid #E6EAEA;;
+    border-bottom: 1px solid #E6EAEA;
 }
 .archive-entry .categories a {
     border-radius: 12px;
@@ -37,4 +37,10 @@ a {
     line-height: 24px;
     height: 24px;
     font-size: 11px;
+}
+.hatena-module-category .hatena-urllist li {
+    display: block;
+    margin: 0;
+    float: none;
+  border-bottom: 1px solid #E6EAEA;
 }
