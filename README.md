@@ -1,1 +1,1 @@
-# css for hatenablog
+# hatenablog
