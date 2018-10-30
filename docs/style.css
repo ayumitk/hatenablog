@@ -23,5 +23,7 @@ a {
 }
 .categories a {
     background-color: #9FD2D6;
-    color: #fff;
+}
+.hatena-module-title {
+    border-bottom: 1px solid #E6EAEA;;
 }
