@@ -22,7 +22,11 @@ a {
     background: none;
 }
 .categories a {
-    background-color: #9FD2D6;
+    background: #9FD2D6;
+  border-radius: 17px;
+    padding: 0 20px;
+  line-height: 34px;
+  height: 34px;
 }
 .hatena-module-title {
     border-bottom: 1px solid #E6EAEA;;
