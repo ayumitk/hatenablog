@@ -31,3 +31,11 @@ a {
 .hatena-module-title {
     border-bottom: 1px solid #E6EAEA;;
 }
+.archive-entry .categories a {
+    background: #9FD2D6;
+    border-radius: 12px;
+    padding: 0 14px;
+    line-height: 24px;
+    height: 24px;
+    font-size: 11px;
+}
