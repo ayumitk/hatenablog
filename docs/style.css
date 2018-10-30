@@ -38,9 +38,10 @@ a {
     height: 24px;
     font-size: 11px;
 }
-.hatena-module-category .hatena-urllist li {
-    display: block;
-    margin: 0;
-    float: none;
-  border-bottom: 1px solid #E6EAEA;
+.hatena-module-category .hatena-urllist li a{
+  background: #9FD2D6;
+  border-radius: 17px;
+    padding: 0 20px;
+  line-height: 34px;
+  height: 34px;
 }
