@@ -4,6 +4,7 @@ $heding-black: #202121;
 $primary-blue: #47a89c;
 $bg-gray: #f7f7f7;
 $bg-blue: #9fd2d6;
+$pink: #ff4e4e;
 
 body {
   color: $primary-black;
@@ -42,6 +43,9 @@ a {
 /* -------------------------------------------------------
   Categories
 --------------------------------------------------------- */
+a.keyword {
+  border-bottom: 0;
+}
 .categories a,
 .hatena-module-category .hatena-urllist li a,
 .hatena-urllist .urllist-category-link {
@@ -51,6 +55,7 @@ a {
   margin-right: 0;
   line-height: 34px;
   height: 34px;
+  color: #fff;
 }
 .hatena-urllist .urllist-category-link {
   font-size: 1.1rem;
@@ -78,7 +83,7 @@ a {
 
 .entry-content h4 {
   font-size: 150%;
-  color: #47a89c;
+  color: $primary-blue;
   margin: 1.5em 0 0.5em 0;
   line-height: 1.2;
   padding: 0;
@@ -98,4 +103,21 @@ a {
     margin-top: 0;
     margin-bottom: 0;
   }
+}
+
+.leave-comment-title {
+  padding: 0.5rem 1rem;
+  margin: 0;
+  line-height: 20px;
+  color: $primary-blue;
+  background: none;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 0;
+  background-clip: padding-box;
+  cursor: pointer;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: bold;
+  border: 0;
 }
