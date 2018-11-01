@@ -47,7 +47,7 @@ a.keyword {
   border-bottom: 0;
 }
 .categories {
-  font-size: 0.875rem;
+  // font-size: 0.875rem;
 }
 .categories a,
 .hatena-module-category .hatena-urllist li a,
@@ -60,11 +60,7 @@ a.keyword {
   height: 34px;
   color: #fff;
   white-space: nowrap;
-}
-.hatena-urllist .urllist-category-link {
-  border-radius: 14px;
-  line-height: 28px;
-  height: 28px;
+  font-size: 0.875rem;
 }
 .urllist-title-link {
   font-size: 0.875rem;
