@@ -49,7 +49,7 @@ a {
   Categories
 --------------------------------------------------------- */
 a.keyword {
-  border-bottom: 0;
+  // border-bottom: 0;
 }
 .categories {
   // font-size: 0.875rem;
@@ -57,15 +57,21 @@ a.keyword {
 .categories a,
 .hatena-module-category .hatena-urllist li a,
 .hatena-urllist .urllist-category-link {
-  background: $bg-blue;
+  background: $bg-light-blue;
   border-radius: 17px;
   padding: 0 10px;
   margin-right: 0;
   line-height: 34px;
   height: 34px;
-  color: #fff;
+  color: $text-blue;
   white-space: nowrap;
-  font-size: 0.875rem;
+  font-size: 0.85rem;
+  &::before{
+    content: '#';
+  }
+  &:hover{
+    background: $bg-blue;
+  }
 }
 .urllist-title-link {
   font-size: 0.875rem;
@@ -159,4 +165,7 @@ h6{
   color: $text-gray;
   font-weight: normal;
   font-size: 1rem;
+  &::before {
+    display: none;
+  }
 }
