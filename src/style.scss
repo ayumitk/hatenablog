@@ -74,7 +74,7 @@ a.keyword {
   }
 }
 .urllist-title-link {
-  font-size: 0.8rem;
+  // font-size: 0.8rem;
 }
 
 .entry-title-link,
@@ -84,6 +84,10 @@ a.keyword {
   &:active{
     color: $text-black;
   }
+}
+
+.entry-content h3{
+  color: $text-black;
 }
 
 /* -------------------------------------------------------
@@ -112,6 +116,8 @@ a.keyword {
   background: $bg-gray
     url(https://cdn.blog.st-hatena.com/css/theme/evergreen/images/quote.png?version=97326de…&env=production)
     no-repeat;
+  line-height: 1.8;
+  font-size: 113%;
   background-position: 40px 25px;
   margin: 0 0 10px;
   padding: 75px 40px 40px;
@@ -166,7 +172,8 @@ h6{
 
 
 .hatena-module,
-.page-archive .archive-entry {
+.page-archive .archive-entry,
+.page-entry #main {
   border-radius: 0;
   box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
