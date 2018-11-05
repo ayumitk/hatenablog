@@ -6,17 +6,18 @@ $bg-gray: #f7f7f7;
 $bg-blue: #9fd2d6;
 $pink: #ff4e4e;
 
+
 body {
   color: $primary-black;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, Hiragino Kaku Gothic Pro, Meiryo, MS PGothic,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Noto Color Emoji";
-  font-size: 1rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.6;
   text-align: left;
   background: #f4f7f6;
+  font-size: 16px;
 }
 a {
   color: $primary-blue;
@@ -28,11 +29,12 @@ a {
 .hatena-module-title a {
   color: $primary-black;
 }
-#title a {
-  color: $primary-black;
-}
 #blog-description {
-  color: $primary-black;
+  font-weight: 400;
+  font-size: 100%;
+  color: #abb4b7;
+  margin: 0.5rem 0 0;
+  padding: 0 2rem;
 }
 
 .hatena-module-title {
@@ -119,4 +121,35 @@ a.keyword {
   text-decoration: none;
   font-weight: bold;
   border: 0;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  a,
+  a:hover,
+  a:visited{
+    color: $primary-black;
+    text-decoration: none;
+  }
+}
+#title {
+  margin: 0;
+  font-size: 313%;
+  letter-spacing: .05em;
+  padding: 0 2rem;
+  a{
+    color: $primary-black;
+  }
+}
+#blog-description {
+  font-weight: 400;
+  font-size: 100%;
+  color: #abb4b7;
+  margin: 5px 0 0;
+  padding: 0 20px;
 }
