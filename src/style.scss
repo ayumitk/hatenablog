@@ -63,6 +63,7 @@ a.keyword {
   color: $text-blue;
   white-space: nowrap;
   font-size: 0.8rem;
+  display: inline-block;
   &::before{
     content: '#';
   }
@@ -76,8 +77,13 @@ a.keyword {
   font-size: 0.8rem;
 }
 
-.hatena-module-category .hatena-urllist li a{
+.entry-title-link,
+.urllist-title-link{
   color: $text-black;
+  &:hover,
+  &:active{
+    color: $text-black;
+  }
 }
 
 /* -------------------------------------------------------
