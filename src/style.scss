@@ -10,10 +10,7 @@ $bg-light-blue: #f4f7f6;
 
 body {
   color: $text-black;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, Hiragino Kaku Gothic Pro, Meiryo, MS PGothic,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, Hiragino Kaku Gothic Pro, Meiryo, MS PGothic, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 400;
   line-height: 1.6;
   text-align: left;
@@ -58,23 +55,29 @@ a.keyword {
 .hatena-module-category .hatena-urllist li a,
 .hatena-urllist .urllist-category-link {
   background: $bg-light-blue;
-  border-radius: 17px;
-  padding: 0 10px;
+  border-radius: 15px;
+  padding: 0 1rem;
   margin-right: 0;
-  line-height: 34px;
-  height: 34px;
+  line-height: 30px;
+  height: 30px;
   color: $text-blue;
   white-space: nowrap;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   &::before{
     content: '#';
   }
-  &:hover{
+  &:hover,
+  &:active{
+    color: #FFF;
     background: $bg-blue;
   }
 }
 .urllist-title-link {
-  font-size: 0.875rem;
+  font-size: 0.8rem;
+}
+
+.hatena-module-category .hatena-urllist li a{
+  color: $text-black;
 }
 
 /* -------------------------------------------------------
