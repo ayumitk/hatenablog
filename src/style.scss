@@ -176,7 +176,7 @@ h6{
 }
 
 .entry-title {
-  line-height: 1.2;
+  line-height: 1.25;
   font-size: 200%;
 }
 
@@ -196,6 +196,7 @@ h6{
 --------------------------------------------------------- */
 #copyright{
   color: $text-black;
+  font-size: 0.8rem;
   .fa-heart path{
     fill: $text-pink;
   }
