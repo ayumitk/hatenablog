@@ -186,9 +186,20 @@ h6{
   }
 }
 
+
+.page-archive .entry-thumb {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.entry-title {
+  line-height: 1.3;
+  font-size: 213%;
+}
+
 #copyright{
   color: $text-gray;
-  .fa-heart{
+  svg.fa-heart{
     fill: $text-pink;
   }
 }
