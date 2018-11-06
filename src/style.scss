@@ -193,13 +193,13 @@ h6{
 }
 
 .entry-title {
-  line-height: 1.3;
-  font-size: 213%;
+  line-height: 1.2;
+  font-size: 200%;
 }
 
 #copyright{
-  color: $text-gray;
-  svg.fa-heart{
+  color: $text-black;
+  .fa-heart path{
     fill: $text-pink;
   }
 }
