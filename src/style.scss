@@ -185,3 +185,10 @@ h6{
     display: none;
   }
 }
+
+#copyright{
+  color: $text-gray;
+  .fa-heart{
+    fill: $text-pink;
+  }
+}
