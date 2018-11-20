@@ -159,19 +159,9 @@ h6 {
   Index archive
 --------------------------------------------------------- */
 .page-archive {
-  @media (max-width: 575.98px) {
-    .archive-entry {
-      height: 145px;
-    }
-  }
-
   .date {
     margin: 1.5rem 1rem 0 1rem;
     font-size: 0.9rem;
-
-    @media (max-width: 575.98px) {
-      margin: 1rem 1rem 0 1rem;
-    }
 
     a {
       color: $text-gray;
@@ -198,17 +188,6 @@ h6 {
   .categories {
     right: 1rem;
     margin: 0 0 1rem 0;
-
-    @media (max-width: 575.98px) {
-      margin: 0 0 0.5rem 0;
-      left: 0.5rem;
-      a{
-        font-size: .7rem;
-        line-height: 24px;
-        height: 24px;
-        border-radius: 12px;
-      }
-    }
   }
 
   .entry-thumb {
@@ -218,13 +197,49 @@ h6 {
     @media (min-width: 1142px) {
       width: 200px;
     }
+  }
 
-    @media (max-width: 575.98px) {
-      width: 100px;
-      height: 100px;
+  @media (max-width: 575.98px) {
+    .archive-entry {
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0.5rem;
+      .archive-entry-header{
+        order: 2;
+        margin-left: 10px;
+        width: calc(100% - 110px);
+        .date{
+          margin: 0;
+        }
+        .entry-title {
+          margin: 0;
+        }
+      }
+      .categories{
+        order: 3;
+        width: 100%;
+        position: relative;
+        left: 0;
+        margin: 0.5rem 0 0 0;
+        a{
+          font-size: .7rem;
+          line-height: 24px;
+          height: 24px;
+          border-radius: 12px;
+          padding: 0 0.5rem;
+        }
+      }
+      .entry-thumb-link{
+        order: 1;
+        float: none;
+        width: 100px;
+        .entry-thumb {
+          width: 100px;
+          height: 100px;
+        }
+      }
     }
-
-
   }
 }
 
