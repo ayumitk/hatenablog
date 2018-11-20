@@ -284,6 +284,9 @@ h6 {
       &:active {
         color: $text-blue;
       }
+      @media (max-width: 575.98px) {
+        font-size: 1rem;
+      }
     }
 
     .urllist-category-link {
@@ -299,18 +302,19 @@ h6 {
       }
     }
 
-    .urllist-item-inner {
+    .urllist-item{
       border-bottom: 1px solid $border-gray;
-      padding-bottom: 0.5rem;
+      margin-bottom: 0.5rem;
+      &:last-child{
+        border: 0;
+        margin: 0;
+      }
     }
 
     .urllist-categories {
       clear: both;
     }
 
-    .urllist-item:last-child .urllist-item-inner {
-      border: 0;
-    }
   }
 
   // Categories
@@ -368,9 +372,10 @@ h6 {
     // line-height: 1.8;
     // font-size: 110%;
     p:not(.hatena-asin-detail-title){
-      line-height: 1.8;
-      margin: 0 0 1em;
+      line-height: 2;
+      margin: 0 0 0.5em;
       @media (max-width: 575.98px) {
+        line-height: 1.8;
         font-size: 17px;
       }
     }
@@ -384,7 +389,7 @@ h6 {
       line-height: 1.2;
       background: none;
       @media (max-width: 575.98px) {
-        font-size: 150%;
+        font-size: 160%;
       }
     }
     h4 {
@@ -421,6 +426,9 @@ h6 {
   }
   .hatena-module-related-entries{
     box-shadow: none;
+  }
+  .related-entries-entry-body{
+    display: none;
   }
 }
 
