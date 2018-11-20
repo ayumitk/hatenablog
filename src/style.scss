@@ -17,19 +17,24 @@ body {
   background: $bg-light-blue;
   font-size: 16px;
 }
+
 #content {
   background-color: $bg-light-blue;
 }
+
 a {
   color: $text-blue;
   transition: all 0.3s ease-in-out;
 }
+
 .hatena-module-title {
   color: $text-black;
 }
+
 .hatena-module-title a {
   color: $text-black;
 }
+
 #blog-description {
   font-weight: 400;
   font-size: 100%;
@@ -42,17 +47,44 @@ a {
   border-bottom: 1px solid #ddd;
 }
 
+
+/* -------------------------------------------------------
+  Header
+--------------------------------------------------------- */
+#blog-title {
+  padding: 5rem 0 3rem 0;
+
+  @media (max-width: 575.98px) {
+    padding: 3rem 0 2rem 0;
+  }
+
+  #title {
+    margin: 0;
+    font-size: 313%;
+    letter-spacing: .05em;
+    padding: 0 2rem;
+
+    @media (max-width: 575.98px) {
+      font-size: 200%;
+    }
+
+    a {
+      color: $text-black;
+
+      &:hover {
+        color: $text-blue;
+      }
+    }
+  }
+
+
+}
+
 /* -------------------------------------------------------
   Categories
 --------------------------------------------------------- */
-a.keyword {
-  // border-bottom: 0;
-}
-.categories {
-  // font-size: 0.875rem;
-}
 .categories a,
-.hatena-module-category .hatena-urllist li a,
+
 .hatena-urllist .urllist-category-link {
   background: $bg-light-blue;
   border-radius: 15px;
@@ -64,29 +96,30 @@ a.keyword {
   white-space: nowrap;
   font-size: 0.8rem;
   display: inline-block;
-  &::before{
+
+  &::before {
     content: '#';
   }
+
   &:hover,
-  &:active{
+  &:active {
     color: #FFF;
     background: $bg-blue;
   }
 }
-.urllist-title-link {
-  // font-size: 0.8rem;
-}
+
 
 .entry-title-link,
-.urllist-title-link{
+.urllist-title-link {
   color: $text-black;
+
   &:hover,
-  &:active{
+  &:active {
     color: $text-black;
   }
 }
 
-.entry-content h3{
+.entry-content h3 {
   color: $text-black;
 }
 
@@ -113,9 +146,7 @@ a.keyword {
 }
 
 .entry-content blockquote {
-  background: $bg-gray
-    url(https://cdn.blog.st-hatena.com/css/theme/evergreen/images/quote.png?version=97326de…&env=production)
-    no-repeat;
+  background: $bg-gray url(https://cdn.blog.st-hatena.com/css/theme/evergreen/images/quote.png?version=97326de…&env=production) no-repeat;
   line-height: 1.8;
   font-size: 113%;
   background-position: 40px 25px;
@@ -123,6 +154,7 @@ a.keyword {
   padding: 75px 40px 40px;
   color: gray;
   border: 0;
+
   p {
     margin-top: 0;
     margin-bottom: 0;
@@ -135,45 +167,30 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
+
   a,
   a:hover,
-  a:visited{
+  a:visited {
     color: $text-black;
     text-decoration: none;
   }
 }
-#title {
-  margin: 0;
-  font-size: 313%;
-  letter-spacing: .05em;
-  padding: 0 2rem;
-  a{
-    color: $text-black;
-  }
-}
+
+
 
 
 .hatena-module,
 .page-archive .archive-entry,
 .page-entry #main {
   border-radius: 0;
-  box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-}
-.date a {
-  color: $text-gray;
-  font-weight: normal;
-  font-size: 1rem;
-  &::before {
-    display: none;
-  }
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 
-.page-archive .entry-thumb {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
+
+
+
 
 .entry-title {
   line-height: 1.25;
@@ -194,10 +211,137 @@ h6{
 /* -------------------------------------------------------
   Footer
 --------------------------------------------------------- */
-#copyright{
+#copyright {
   color: $text-black;
   font-size: 0.8rem;
-  .fa-heart path{
+
+  a {
+    color: $text-blue;
+    padding: 0 0.5rem;
+  }
+
+  .fa-heart path {
     fill: $text-pink;
+  }
+}
+
+
+
+/* -------------------------------------------------------
+  Index archive
+--------------------------------------------------------- */
+.page-archive {
+  .date {
+    margin: 1.5rem 1rem 0 1rem;
+    font-size: 0.9rem;
+
+    a {
+      color: $text-gray;
+      font-weight: normal;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  .entry-title {
+    margin: 0.5rem 1rem;
+  }
+
+  .categories {
+    right: 1rem;
+    margin: 0 0 1rem 0;
+  }
+
+  .entry-thumb {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+    @media (min-width: 1142px) {
+      width: 200px;
+    }
+  }
+}
+
+/* -------------------------------------------------------
+  Sidebar
+--------------------------------------------------------- */
+.hatena-module {
+
+  // Profile
+  &.hatena-module-profile {
+    .profile-description {
+      @media (min-width: 1142px) {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  // Latest entries
+  &.hatena-module-recent-entries {
+    .urllist-title-link {
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+
+    .urllist-category-link {
+      font-size: .65rem;
+      line-height: 24px;
+      height: 24px;
+      padding: 0 0.5rem;
+      border-radius: 12px;
+      margin: 0 0.25rem 0.25rem 0;
+
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .urllist-item-inner {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.5rem;
+    }
+
+    .urllist-categories {
+      clear: both;
+    }
+
+    .recent-entries .urllist-item:last-child .urllist-item-inner {
+      border: 0;
+    }
+  }
+
+  // Categories
+  &.hatena-module-category {
+    .hatena-urllist li {
+      display: block;
+      margin-right: 0;
+      float: none;
+      border-bottom: 1px solid #ddd;
+      padding: 0.5rem 0;
+
+      a {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        display: block;
+        height: auto;
+        margin-right: 0;
+        padding: 0;
+        white-space: normal;
+        color: $text-black;
+        border-radius: 0;
+        background: none;
+
+        &:hover {
+          color: $text-blue;
+        }
+
+        &::before {
+          display: none;
+        }
+      }
+    }
   }
 }
