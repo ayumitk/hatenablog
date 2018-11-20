@@ -26,6 +26,7 @@ body {
 
 #content {
   background-color: $bg-light-blue;
+  padding-bottom : 0;
 }
 
 a {
@@ -52,6 +53,10 @@ h6 {
 .page-entry #main {
   border-radius: 0;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.page-entry #main{
+  margin: 0;
 }
 
 
