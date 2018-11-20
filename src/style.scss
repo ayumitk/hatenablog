@@ -7,6 +7,12 @@ $bg-gray: #f7f7f7;
 $bg-blue: #9fd2d6;
 $bg-light-blue: #f4f7f6;
 
+$border-gray : #DDD;
+
+
+/* -------------------------------------------------------
+  Basic
+--------------------------------------------------------- */
 
 body {
   color: $text-black;
@@ -27,7 +33,26 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  a,
+  a:hover,
+  a:visited {
+    color: $text-black;
+    text-decoration: none;
+  }
+}
 
+.hatena-module,
+.page-archive .archive-entry,
+.page-entry #main {
+  border-radius: 0;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
 
 
 /* -------------------------------------------------------
@@ -73,12 +98,12 @@ a {
   }
 }
 
+
 /* -------------------------------------------------------
   Categories
 --------------------------------------------------------- */
 .categories a,
-
-.hatena-urllist .urllist-category-link {
+.urllist-category-link{
   background: $bg-light-blue;
   border-radius: 15px;
   padding: 0 1rem;
@@ -100,96 +125,6 @@ a {
     background: $bg-blue;
   }
 }
-
-
-.entry-title-link,
-.urllist-title-link {
-  color: $text-black;
-
-  &:hover,
-  &:active {
-    color: $text-black;
-  }
-}
-
-.entry-content h3 {
-  color: $text-black;
-}
-
-/* -------------------------------------------------------
-  Entry
---------------------------------------------------------- */
-.entry-content h3 {
-  font-size: 200%;
-  margin: 2rem 0;
-  border-bottom: solid 2px $text-blue;
-  font-weight: normal;
-  padding: 0 0 0.5rem 0;
-  line-height: 1.2;
-  background: none;
-}
-
-.entry-content h4 {
-  font-size: 150%;
-  color: $text-blue;
-  margin: 1.5em 0 0.5em 0;
-  line-height: 1.2;
-  padding: 0;
-  border: 0;
-}
-
-.entry-content blockquote {
-  background: $bg-gray url(https://cdn.blog.st-hatena.com/css/theme/evergreen/images/quote.png?version=97326de…&env=production) no-repeat;
-  line-height: 1.8;
-  font-size: 113%;
-  background-position: 40px 25px;
-  margin: 0 0 10px;
-  padding: 75px 40px 40px;
-  color: gray;
-  border: 0;
-
-  p {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-}
-
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-
-  a,
-  a:hover,
-  a:visited {
-    color: $text-black;
-    text-decoration: none;
-  }
-}
-
-
-
-
-.hatena-module,
-.page-archive .archive-entry,
-.page-entry #main {
-  border-radius: 0;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-
-
-
-
-
-.entry-title {
-  line-height: 1.25;
-  font-size: 200%;
-}
-
 
 
 /* -------------------------------------------------------
@@ -224,7 +159,7 @@ h6 {
   Index archive
 --------------------------------------------------------- */
 .page-archive {
-  @media (max-width: 320px) {
+  @media (max-width: 575.98px) {
     .archive-entry {
       height: 145px;
     }
@@ -234,7 +169,7 @@ h6 {
     margin: 1.5rem 1rem 0 1rem;
     font-size: 0.9rem;
 
-    @media (max-width: 320px) {
+    @media (max-width: 575.98px) {
       margin: 1rem 1rem 0 1rem;
     }
 
@@ -252,11 +187,19 @@ h6 {
     margin: 0.5rem 1rem;
   }
 
+  .entry-title-link{
+    color: $text-black;
+    &:hover,
+    &:active {
+      color: $text-blue;
+    }
+  }
+
   .categories {
     right: 1rem;
     margin: 0 0 1rem 0;
 
-    @media (max-width: 320px) {
+    @media (max-width: 575.98px) {
       margin: 0 0 0.5rem 0;
     }
   }
@@ -269,7 +212,7 @@ h6 {
       width: 200px;
     }
 
-    @media (max-width: 320px) {
+    @media (max-width: 575.98px) {
       width: 100px;
       height: 100px;
     }
@@ -283,14 +226,16 @@ h6 {
 --------------------------------------------------------- */
 .hatena-module {
 
+  // sidebar common
   .hatena-module-title {
     color: $text-black;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid $border-gray;
 
     a {
       color: $text-black;
 
-      &:hover {
+      &:hover,
+      &:active {
         color: $text-blue;
       }
     }
@@ -306,21 +251,26 @@ h6 {
     }
   }
 
-  // Latest entries
-  &.hatena-module-recent-entries {
+  // Latest entries, Related entries
+  &.hatena-module-recent-entries,
+  &.hatena-module-related-entries {
     .urllist-title-link {
       font-size: 0.9rem;
       line-height: 1.4;
+      color: $text-black;
+      &:hover,
+      &:active {
+        color: $text-blue;
+      }
     }
 
     .urllist-category-link {
-      font-size: .65rem;
+      font-size: .7rem;
       line-height: 24px;
       height: 24px;
       padding: 0 0.5rem;
       border-radius: 12px;
       margin: 0 0.25rem 0.25rem 0;
-
 
       &:hover {
         text-decoration: none;
@@ -328,7 +278,7 @@ h6 {
     }
 
     .urllist-item-inner {
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid $border-gray;
       padding-bottom: 0.5rem;
     }
 
@@ -336,7 +286,7 @@ h6 {
       clear: both;
     }
 
-    .recent-entries .urllist-item:last-child .urllist-item-inner {
+    .urllist-item:last-child .urllist-item-inner {
       border: 0;
     }
   }
@@ -347,29 +297,83 @@ h6 {
       display: block;
       margin-right: 0;
       float: none;
-      border-bottom: 1px solid #ddd;
-      padding: 0.5rem 0;
+      border-bottom: 1px solid $border-gray;
+      padding: 0;
 
       a {
-        font-size: 0.9rem;
-        line-height: 1.6;
-        display: block;
-        height: auto;
-        margin-right: 0;
-        padding: 0;
-        white-space: normal;
         color: $text-black;
-        border-radius: 0;
+        padding: 0.5rem 0;
         background: none;
 
-        &:hover {
+        &:hover,
+        &:active {
           color: $text-blue;
         }
 
-        &::before {
-          display: none;
-        }
+
       }
     }
   }
 }
+
+/* -------------------------------------------------------
+  Entry
+--------------------------------------------------------- */
+.entry{
+  .date a{
+    color: $text-gray;
+    font-weight: normal;
+    &::before{
+      display: none;
+    }
+  }
+  .entry-title {
+    line-height: 1.25;
+    font-size: 200%;
+  }
+  .categories {
+    margin: 1em 0;
+  }
+  .entry-header {
+    padding-bottom: 0;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid $border-gray;
+  }
+  .entry-content{
+    h3 {
+      color: $text-black;
+      font-size: 200%;
+      margin: 2rem 0;
+      border-bottom: solid 2px $text-blue;
+      font-weight: normal;
+      padding: 0 0 0.5rem 0;
+      line-height: 1.2;
+      background: none;
+    }
+    h4 {
+      font-size: 150%;
+      color: $text-blue;
+      margin: 1.5em 0 0.5em 0;
+      line-height: 1.2;
+      padding: 0;
+      border: 0;
+    }
+    blockquote {
+      background: $bg-gray url(https://cdn.blog.st-hatena.com/css/theme/evergreen/images/quote.png?version=97326de…&env=production) no-repeat;
+      line-height: 1.8;
+      font-size: 113%;
+      background-position: 40px 25px;
+      margin: 0 0 10px;
+      padding: 75px 40px 40px;
+      color: gray;
+      border: 0;
+
+      p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
