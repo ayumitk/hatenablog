@@ -367,7 +367,7 @@ h6 {
   .entry-content{
     // line-height: 1.8;
     // font-size: 110%;
-    p{
+    p:not(.hatena-asin-detail-title){
       line-height: 1.8;
       margin: 0 0 1em;
       @media (max-width: 575.98px) {
@@ -395,7 +395,7 @@ h6 {
       padding: 0;
       border: 0;
       @media (max-width: 575.98px) {
-        font-size: 125%;
+        font-size: 130%;
       }
     }
     blockquote {
