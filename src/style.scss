@@ -27,25 +27,7 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-.hatena-module-title {
-  color: $text-black;
-}
 
-.hatena-module-title a {
-  color: $text-black;
-}
-
-#blog-description {
-  font-weight: 400;
-  font-size: 100%;
-  color: $text-gray;
-  margin: 1rem 0 0;
-  padding: 0 2rem;
-}
-
-.hatena-module-title {
-  border-bottom: 1px solid #ddd;
-}
 
 
 /* -------------------------------------------------------
@@ -55,7 +37,7 @@ a {
   padding: 5rem 0 3rem 0;
 
   @media (max-width: 575.98px) {
-    padding: 3rem 0 2rem 0;
+    padding: 3rem 0 1rem 0;
   }
 
   #title {
@@ -76,8 +58,19 @@ a {
       }
     }
   }
+}
 
+#blog-description {
+  font-weight: 400;
+  font-size: 100%;
+  color: $text-gray;
+  margin: 1rem 0 0;
+  padding: 0 2rem;
 
+  @media (max-width: 575.98px) {
+    font-size: 90%;
+    margin: 0.75rem 0 0;
+  }
 }
 
 /* -------------------------------------------------------
@@ -231,9 +224,19 @@ h6 {
   Index archive
 --------------------------------------------------------- */
 .page-archive {
+  @media (max-width: 320px) {
+    .archive-entry {
+      height: 145px;
+    }
+  }
+
   .date {
     margin: 1.5rem 1rem 0 1rem;
     font-size: 0.9rem;
+
+    @media (max-width: 320px) {
+      margin: 1rem 1rem 0 1rem;
+    }
 
     a {
       color: $text-gray;
@@ -252,6 +255,10 @@ h6 {
   .categories {
     right: 1rem;
     margin: 0 0 1rem 0;
+
+    @media (max-width: 320px) {
+      margin: 0 0 0.5rem 0;
+    }
   }
 
   .entry-thumb {
@@ -261,6 +268,13 @@ h6 {
     @media (min-width: 1142px) {
       width: 200px;
     }
+
+    @media (max-width: 320px) {
+      width: 100px;
+      height: 100px;
+    }
+
+
   }
 }
 
@@ -268,6 +282,20 @@ h6 {
   Sidebar
 --------------------------------------------------------- */
 .hatena-module {
+
+  .hatena-module-title {
+    color: $text-black;
+    border-bottom: 1px solid #ddd;
+
+    a {
+      color: $text-black;
+
+      &:hover {
+        color: $text-blue;
+      }
+    }
+  }
+
 
   // Profile
   &.hatena-module-profile {
