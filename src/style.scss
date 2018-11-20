@@ -70,7 +70,12 @@ h6 {
   }
   #box2 {
     width: 100%;
+  }
 }
+@media (max-width: 575.98px) {
+  #content {
+    padding: 10px;
+  }
 }
 
 
