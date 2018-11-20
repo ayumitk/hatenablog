@@ -351,7 +351,9 @@ h6 {
   }
   .entry-title {
     line-height: 1.25;
-    font-size: 200%;
+    @media (min-width: 1200px) {
+      font-size: 200%;
+    }
   }
   .categories {
     margin: 1em 0;
@@ -363,11 +365,14 @@ h6 {
   }
 
   .entry-content{
-    line-height: 1.8;
-    //font-size: 110%;
+    // line-height: 1.8;
+    // font-size: 110%;
     p{
       line-height: 1.8;
       margin: 0 0 1em;
+      @media (max-width: 575.98px) {
+        font-size: 17px;
+      }
     }
     h3 {
       color: $text-black;
@@ -378,6 +383,9 @@ h6 {
       padding: 0 0 0.5rem 0;
       line-height: 1.2;
       background: none;
+      @media (max-width: 575.98px) {
+        font-size: 150%;
+      }
     }
     h4 {
       font-size: 150%;
@@ -386,6 +394,9 @@ h6 {
       line-height: 1.2;
       padding: 0;
       border: 0;
+      @media (max-width: 575.98px) {
+        font-size: 125%;
+      }
     }
     blockquote {
       background: $bg-gray url(https://cdn.blog.st-hatena.com/css/theme/evergreen/images/quote.png?version=97326de…&env=production) no-repeat;
@@ -396,6 +407,11 @@ h6 {
       padding: 75px 40px 40px;
       color: gray;
       border: 0;
+      @media (max-width: 575.98px) {
+        padding: 40px 20px 20px;
+        background-position: 15px 15px;
+        background-size: 30px;
+      }
 
       p {
         margin-top: 0;
