@@ -273,7 +273,8 @@ h6 {
 .hatena-module {
 
   // PR
-  &.hatena-module-html:first-child{
+  &.hatena-module-html:first-child,
+  &.hatena-module-html:last-child{
     padding: 0;
     background: transparent;
     box-shadow: none;
