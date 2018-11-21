@@ -272,6 +272,14 @@ h6 {
 --------------------------------------------------------- */
 .hatena-module {
 
+  // PR
+  &.hatena-module-html:first-child{
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+    text-align: center;
+  }
+
   // sidebar common
   .hatena-module-title {
     color: $text-black;
