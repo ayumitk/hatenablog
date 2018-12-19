@@ -523,15 +523,6 @@ h6 {
 /* -------------------------------------------------------
   Statics Pages
 --------------------------------------------------------- */
-.page-static_page #main {
-  background-color: #fff;
-  padding: 20px;
-  margin-bottom: 3rem;
-}
-
-@media (min-width: 1142px) {
-  .page-static_page #main {
-    background-color: #fff;
-    padding: 30px;
-  }
+.static-page-contact .entry-header{
+  display: none;
 }
