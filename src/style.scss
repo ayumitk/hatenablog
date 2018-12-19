@@ -26,7 +26,7 @@ body {
 
 #content {
   background-color: $bg-light-blue;
-  padding-bottom : 0;
+  padding-bottom: 0;
 }
 
 a {
@@ -40,6 +40,7 @@ h3,
 h4,
 h5,
 h6 {
+
   a,
   a:hover,
   a:visited {
@@ -80,17 +81,21 @@ h6 {
   #content {
     padding: 20px;
   }
-  #content-inner{
+
+  #content-inner {
     flex-direction: column;
     width: 100%;
   }
+
   #wrapper {
     width: 100%;
   }
+
   #box2 {
     width: 100%;
   }
 }
+
 @media (max-width: 575.98px) {
   #content {
     padding: 10px;
@@ -146,7 +151,7 @@ h6 {
   Categories
 --------------------------------------------------------- */
 .categories a,
-.urllist-category-link{
+.urllist-category-link {
   background: $bg-light-blue;
   border-radius: 15px;
   padding: 0 1rem;
@@ -220,8 +225,9 @@ h6 {
     margin: 0.5rem 1rem;
   }
 
-  .entry-title-link{
+  .entry-title-link {
     color: $text-black;
+
     &:hover,
     &:active {
       color: $text-blue;
@@ -248,24 +254,29 @@ h6 {
       display: flex;
       flex-wrap: wrap;
       padding: 0.5rem;
-      .archive-entry-header{
+
+      .archive-entry-header {
         order: 2;
         margin-left: 10px;
         width: calc(100% - 110px);
-        .date{
+
+        .date {
           margin: 0;
         }
+
         .entry-title {
           margin: 0;
         }
       }
-      .categories{
+
+      .categories {
         order: 3;
         width: 100%;
         position: relative;
         left: 0;
         margin: 0.5rem 0 0 0;
-        a{
+
+        a {
           font-size: .7rem;
           line-height: 24px;
           height: 24px;
@@ -273,10 +284,12 @@ h6 {
           padding: 0 0.5rem;
         }
       }
-      .entry-thumb-link{
+
+      .entry-thumb-link {
         order: 1;
         float: none;
         width: 100px;
+
         .entry-thumb {
           width: 100px;
           height: 100px;
@@ -293,7 +306,7 @@ h6 {
 
   // PR
   &.hatena-module-html:first-child,
-  &.hatena-module-html:last-child{
+  &.hatena-module-html:last-child {
     padding: 0;
     background: transparent;
     box-shadow: none;
@@ -332,10 +345,12 @@ h6 {
       font-size: 0.9rem;
       line-height: 1.4;
       color: $text-black;
+
       &:hover,
       &:active {
         color: $text-blue;
       }
+
       @media (max-width: 575.98px) {
         font-size: 1rem;
       }
@@ -354,10 +369,11 @@ h6 {
       }
     }
 
-    .urllist-item{
+    .urllist-item {
       border-bottom: 1px solid $border-gray;
       margin-bottom: 0.5rem;
-      &:last-child{
+
+      &:last-child {
         border: 0;
         margin: 0;
       }
@@ -397,40 +413,48 @@ h6 {
 /* -------------------------------------------------------
   Entry
 --------------------------------------------------------- */
-.entry{
-  .date a{
+.entry {
+  .date a {
     color: $text-gray;
     font-weight: normal;
-    &::before{
+
+    &::before {
       display: none;
     }
   }
+
   .entry-title {
     line-height: 1.25;
+
     @media (min-width: 1200px) {
       font-size: 200%;
     }
   }
+
   .categories {
     margin: 1em 0;
   }
+
   .entry-header {
     padding-bottom: 0;
     margin-bottom: 1.5em;
     border-bottom: 1px solid $border-gray;
   }
 
-  .entry-content{
+  .entry-content {
+
     // line-height: 1.8;
     // font-size: 110%;
-    p:not(.hatena-asin-detail-title){
+    p:not(.hatena-asin-detail-title) {
       line-height: 2;
       margin: 0 0 0.5em;
+
       @media (max-width: 575.98px) {
         line-height: 1.8;
         font-size: 17px;
       }
     }
+
     h3 {
       color: $text-black;
       font-size: 200%;
@@ -440,10 +464,12 @@ h6 {
       padding: 0 0 0.5rem 0;
       line-height: 1.2;
       background: none;
+
       @media (max-width: 575.98px) {
         font-size: 160%;
       }
     }
+
     h4 {
       font-size: 150%;
       color: $text-blue;
@@ -451,10 +477,12 @@ h6 {
       line-height: 1.2;
       padding: 0;
       border: 0;
+
       @media (max-width: 575.98px) {
         font-size: 130%;
       }
     }
+
     blockquote {
       background: $bg-gray url(https://cdn.blog.st-hatena.com/css/theme/evergreen/images/quote.png?version=97326de…&env=production) no-repeat;
       line-height: 1.8;
@@ -464,6 +492,7 @@ h6 {
       padding: 75px 40px 40px;
       color: gray;
       border: 0;
+
       @media (max-width: 575.98px) {
         padding: 40px 20px 20px;
         background-position: 15px 15px;
@@ -476,12 +505,30 @@ h6 {
       }
     }
   }
-  .hatena-module-related-entries{
+
+  .hatena-module-related-entries {
     box-shadow: none;
   }
-  .related-entries-entry-body{
+
+  .related-entries-entry-body {
     display: none;
   }
 }
 
 
+
+/* -------------------------------------------------------
+  Statics Pages
+--------------------------------------------------------- */
+.page-static_page #main {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 1142px) {
+  .page-static_page #main {
+    background-color: #fff;
+    padding: 30px;
+  }
+}

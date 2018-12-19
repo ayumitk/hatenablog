@@ -38,7 +38,7 @@ gulp.task("html", () => {
         collapseWhitespace: true
       })
     )
-    .pipe(gulp.dest("./docs/"))
+    .pipe(gulp.dest("./docs"))
     .pipe(
       browserSync.reload({
         stream: true
@@ -49,36 +49,36 @@ gulp.task("html", () => {
 // Compile sass into CSS & Auto-inject into browsers
 gulp.task("sass", () =>
   gulp
-    .src("./src/*.scss")
+  .src("./src/*.scss")
 
-    .pipe(
-      plumber({
-        errorHandler: notify.onError("Error: <%= error.message %>")
-      })
-    )
+  .pipe(
+    plumber({
+      errorHandler: notify.onError("Error: <%= error.message %>")
+    })
+  )
 
-    .pipe(
-      autoprefixer({
-        browsers: ["last 2 versions"],
-        cascade: false
-      })
-    )
+  .pipe(
+    autoprefixer({
+      browsers: ["last 2 versions"],
+      cascade: false
+    })
+  )
 
-    .pipe(csscomb())
+  .pipe(csscomb())
 
-    .pipe(
-      sass({
-        outputStyle: "compressed"
-      }).on("error", sass.logError)
-    )
+  .pipe(
+    sass({
+      outputStyle: "compressed"
+    }).on("error", sass.logError)
+  )
 
-    .pipe(gulp.dest("./docs"))
+  .pipe(gulp.dest("./docs"))
 
-    .pipe(
-      browserSync.reload({
-        stream: true
-      })
-    )
+  .pipe(
+    browserSync.reload({
+      stream: true
+    })
+  )
 );
 
 gulp.task("default", ["server"]);
