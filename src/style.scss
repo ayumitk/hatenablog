@@ -526,3 +526,9 @@ h6 {
 .static-page-contact .entry-header{
   display: none;
 }
+
+.static-page-contact #main{
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+}
