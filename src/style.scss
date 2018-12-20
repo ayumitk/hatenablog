@@ -592,3 +592,29 @@ h6 {
     padding-top: 0.2rem;
   }
 }
+
+
+/* -------------------------------------------------------
+  Category Header
+--------------------------------------------------------- */
+.archive-header-category {
+  text-align: left;
+  .archive-heading {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  .archive-description{
+    margin-top: 1rem;
+  }
+}
+
+/* -------------------------------------------------------
+  Breadcrumb
+--------------------------------------------------------- */
+.breadcrumb{
+  color: $text-gray;
+  margin-top: 1rem;
+  a {
+    color: $text-blue;
+  }
+}
