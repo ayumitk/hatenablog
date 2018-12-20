@@ -612,9 +612,13 @@ h6 {
   Breadcrumb
 --------------------------------------------------------- */
 .breadcrumb{
+  display: none;
   color: $text-gray;
   margin-top: 1rem;
   a {
     color: $text-blue;
+  }
+  @media (min-width: 900px){
+    display: block;
   }
 }
