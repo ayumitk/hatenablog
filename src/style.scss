@@ -73,7 +73,6 @@ h6 {
   .page-entry #main,
   .page-about #main,
   .page-static_page #main {
-      background-color: #fff;
       padding: 30px;
   }
 }
@@ -102,6 +101,11 @@ h6 {
 @media (max-width: 575.98px) {
   #content {
     padding: 10px;
+  }
+  .page-entry #main,
+  .page-about #main,
+  .page-static_page #main {
+      padding: 10px;
   }
 }
 
