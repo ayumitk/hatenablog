@@ -614,10 +614,11 @@ h6 {
     }
   }
   .archive-description{
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     font-size: 0.8rem;
     @media (min-width: 1142px){
       font-size: 1rem;
+      margin-top: 1rem;
     }
   }
 }
