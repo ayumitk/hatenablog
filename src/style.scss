@@ -603,6 +603,10 @@ h6 {
 --------------------------------------------------------- */
 .archive-header-category {
   text-align: left;
+  margin-bottom: 1em;
+  @media (min-width: 1142px){
+    margin-bottom: 3em;
+  }
   .archive-heading {
     margin: 0;
     color: $text-black;
@@ -615,6 +619,7 @@ h6 {
     font-size: 0.8rem;
   }
 }
+
 
 /* -------------------------------------------------------
   Breadcrumb
