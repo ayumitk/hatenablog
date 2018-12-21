@@ -604,11 +604,15 @@ h6 {
 .archive-header-category {
   text-align: left;
   .archive-heading {
-    font-size: 1.8rem;
     margin: 0;
+    color: $text-black;
+    @media (min-width: 1142px){
+      font-size: 1.8rem;
+    }
   }
   .archive-description{
     margin-top: 1rem;
+    font-size: 0.8rem;
   }
 }
 
