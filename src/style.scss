@@ -640,3 +640,14 @@ h6 {
     display: block;
   }
 }
+
+
+#entry-footer-series-nav{
+  background: $bg-light-blue;
+  padding: 1.5rem;
+  .nav-next{
+    &::before{
+      content: ' ';
+    }
+  }
+}
