@@ -645,12 +645,23 @@ h6 {
 #entry-footer-series-nav{
   background: $bg-light-blue;
   padding: 1.5rem;
-  .nav-next{
+  .nav-next,
+  .nav-previous,
+  .nav-index{
     &::before{
-      content: "\f35a";
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
       margin-right: 10px;
+      color: $text-blue;
     }
+  }
+  .nav-next::before{
+      content: "\f35a";
+  }
+  .nav-previous::before{
+      content: "\f359";
+  }
+  .nav-index::before{
+    content: "\f0ca";
   }
 }
