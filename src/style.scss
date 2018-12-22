@@ -648,10 +648,11 @@ h6 {
   .nav-next,
   .nav-previous,
   .nav-index{
+    margin: 0;
     &::before{
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
-      margin-right: 10px;
+      margin-right: 0.5rem;
       color: $text-blue;
     }
   }
