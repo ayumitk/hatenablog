@@ -647,7 +647,10 @@ h6 {
   padding: 1.5rem;
   .nav-next{
     &::before{
-      content: ' ';
+      content: '/f105';
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      margin-right: 10px;
     }
   }
 }
