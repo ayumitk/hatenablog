@@ -70,10 +70,11 @@ h6 {
 }
 
 @media (min-width: 1142px) {
+
   .page-entry #main,
   .page-about #main,
   .page-static_page #main {
-      padding: 30px;
+    padding: 30px;
   }
 }
 
@@ -102,10 +103,11 @@ h6 {
   #content {
     padding: 10px;
   }
+
   .page-entry #main,
   .page-about #main,
   .page-static_page #main {
-      padding: 10px;
+    padding: 10px;
   }
 }
 
@@ -204,8 +206,8 @@ h6 {
     padding: 0 0.5rem;
   }
 
-  .fa-heart path {
-    fill: $text-pink;
+  .fa-heart {
+    color: $text-pink;
   }
 }
 
@@ -528,11 +530,11 @@ h6 {
 /* -------------------------------------------------------
   Statics Pages
 --------------------------------------------------------- */
-.static-page-contact .entry-header{
+.static-page-contact .entry-header {
   display: none;
 }
 
-.static-page-contact #main{
+.static-page-contact #main {
   background: transparent;
   box-shadow: none;
   padding: 0;
@@ -543,8 +545,9 @@ h6 {
 /* -------------------------------------------------------
   Global Nav
 --------------------------------------------------------- */
-#global-nav{
+#global-nav {
   background: $text-black;
+
   ul {
     margin: 0 auto;
     list-style: none;
@@ -552,16 +555,19 @@ h6 {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
-    border-right: solid 1px rgba(255,255,255,0.2);
-    @media (min-width: 1142px){
+    border-right: solid 1px rgba(255, 255, 255, 0.2);
+
+    @media (min-width: 1142px) {
       width: 1142px;
     }
-    li{
+
+    li {
       list-style: none;
       flex: auto;
-      a{
-        border-left: solid 1px rgba(255,255,255,0.2);
-        border-bottom: solid 1px rgba(255,255,255,0.2);
+
+      a {
+        border-left: solid 1px rgba(255, 255, 255, 0.2);
+        border-bottom: solid 1px rgba(255, 255, 255, 0.2);
         display: block;
         color: #FFF;
         padding: 0.25rem 0.5rem;
@@ -569,11 +575,13 @@ h6 {
         text-align: center;
         white-space: nowrap;
         font-size: 0.8rem;
-        @media (min-width: 1142px){
+
+        @media (min-width: 1142px) {
           padding: 0.75rem;
           font-size: 1rem;
         }
-        &:hover{
+
+        &:hover {
           background: $text-blue;
         }
       }
@@ -586,14 +594,15 @@ h6 {
 /* -------------------------------------------------------
   Table of Contents
 --------------------------------------------------------- */
-.entry-content .table-of-contents{
+.entry-content .table-of-contents {
   border: none;
   box-shadow: none;
   border-radius: 0;
   width: auto;
   font-size: 100%;
   padding: 2rem 2rem 2rem 3.5rem;
-  li{
+
+  li {
     padding-top: 0.2rem;
   }
 }
@@ -605,20 +614,25 @@ h6 {
 .archive-header-category {
   text-align: left;
   margin-bottom: 1em;
-  @media (min-width: 1142px){
+
+  @media (min-width: 1142px) {
     margin-bottom: 3em;
   }
+
   .archive-heading {
     margin: 0;
     color: $text-black;
-    @media (min-width: 1142px){
+
+    @media (min-width: 1142px) {
       font-size: 1.8rem;
     }
   }
-  .archive-description{
+
+  .archive-description {
     margin-top: 0.5rem;
     font-size: 0.8rem;
-    @media (min-width: 1142px){
+
+    @media (min-width: 1142px) {
       font-size: 1rem;
       margin-top: 1rem;
     }
@@ -629,40 +643,47 @@ h6 {
 /* -------------------------------------------------------
   Breadcrumb
 --------------------------------------------------------- */
-.breadcrumb{
+.breadcrumb {
   display: none;
   color: $text-gray;
   margin-top: 1rem;
+
   a {
     color: $text-blue;
   }
-  @media (min-width: 900px){
+
+  @media (min-width: 900px) {
     display: block;
   }
 }
 
 
-#entry-footer-series-nav{
+#entry-footer-series-nav {
   background: $bg-light-blue;
   padding: 1.5rem;
+
   .nav-next,
   .nav-previous,
-  .nav-index{
+  .nav-index {
     margin: 0;
-    &::before{
+
+    &::before {
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
       margin-right: 0.5rem;
       color: $text-blue;
     }
   }
-  .nav-next::before{
-      content: "\f35a";
+
+  .nav-next::before {
+    content: "\f35a";
   }
-  .nav-previous::before{
-      content: "\f359";
+
+  .nav-previous::before {
+    content: "\f359";
   }
-  .nav-index::before{
+
+  .nav-index::before {
     content: "\f0ca";
   }
 }
