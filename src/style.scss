@@ -729,6 +729,10 @@ h6 {
 
 #stoc {
   overflow-y: auto;
+  ol{
+    margin: 0;
+    padding-left: 1rem;
+  }
 }
 /*
 #stoc.shadow {
