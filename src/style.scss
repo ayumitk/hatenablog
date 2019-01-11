@@ -645,7 +645,8 @@ h6 {
 .breadcrumb {
   display: none;
   color: $text-gray;
-  margin-top: 1rem;
+  margin: 1rem 0;
+  padding: 0;
 
   a {
     color: $text-blue;
