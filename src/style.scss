@@ -734,6 +734,9 @@ h6 {
     padding-left: 0;
     list-style: none;
   }
+  ol li ol{
+    padding-left: 1rem;
+  }
 }
 /*
 #stoc.shadow {
