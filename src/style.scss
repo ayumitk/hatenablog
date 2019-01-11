@@ -764,16 +764,16 @@ a.breadcrumb-child-link:before {
   background-attachment: local;
 }
 #stoc a {
-  padding: 2px 2px 2px 6px;
+  padding: 0.25rem 0;
   display: block;
   text-decoration: none;
 }
 #stoc:not(.touch) a:hover {
-  background-color: rgba(0,0,0,.04);
+  background-color: $bg-light-blue;
   text-decoration: underline;
 }
 #stoc .active {
-  background-color: rgba(0,0,0,.04);
+  background-color: $bg-light-blue;
 }
 
 #stoc::-webkit-scrollbar {
