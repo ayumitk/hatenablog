@@ -729,14 +729,9 @@ h6 {
 
 #stoc {
   overflow-y: auto;
-  ol{
-    margin: 0;
-    padding-left: 1.5rem;
-  }
 }
-/*
 #stoc.shadow {
-  // Shadows
+  /* Shadows */
   background:
     radial-gradient(farthest-side at top, rgba(0,0,0,.17), transparent) top / 100% 11px,
     radial-gradient(farthest-side at bottom, rgba(0,0,0,.17), transparent) bottom / 100% 11px;
@@ -745,14 +740,13 @@ h6 {
 }
 #stoc ol {
   margin: 0;
-  padding: 0 0 0 1em;
-  list-style-type: none;
+  padding: 0 0 0 1.5em;
 }
 #stoc > ol {
   padding-left: 0;
 }
 #stoc.shadow > ol {
-  // Shadow covers
+  /* Shadow covers */
   background:
     linear-gradient(#fff 30%, transparent) top / 100% 40px,
     linear-gradient(transparent, #fff 70%) bottom / 100% 40px;
@@ -771,7 +765,7 @@ h6 {
 #stoc .active {
   background-color: rgba(0,0,0,.04);
 }
-*/
+
 #stoc::-webkit-scrollbar {
   width: 8px;
   background: #ececec;
