@@ -29,10 +29,18 @@ body {
   padding: 1rem 0 0 0;
 }
 
-a {
+a,
+a:visited{
   color: $text-blue;
   transition: all 0.3s ease-in-out;
 }
+
+a:hover,
+a:active,
+a:focus{
+  color: darken($text-blue, 10%);
+}
+
 
 h1,
 h2,
@@ -708,3 +716,8 @@ a.breadcrumb-child-link:before {
 
 
 
+.pager .pager-next a{
+  color: $text-blue;
+  font-size: 1rem;
+  border-color: $text-blue;
+}
