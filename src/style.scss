@@ -33,12 +33,21 @@ a,
 a:visited{
   color: $text-blue;
   transition: all 0.3s ease-in-out;
+  &::before,
+  &::after{
+    color: $text-blue;
+    transition: all 0.3s ease-in-out;
+  }
 }
 
 a:hover,
 a:active,
 a:focus{
   color: darken($text-blue, 10%);
+  &::before,
+  &::after{
+    color: darken($text-blue, 10%);
+  }
 }
 
 
@@ -717,8 +726,6 @@ a.breadcrumb-child-link:before {
 
 
 .pager .pager-next a{
-  color: $text-blue;
-  font-size: 1rem;
   border: solid 1px $text-blue;
   display: inline-block;
   text-decoration: none;
@@ -728,7 +735,6 @@ a.breadcrumb-child-link:before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     margin-left: 0.5rem;
-    color: $text-blue;
     content: "\f105";
   }
   &:hover{
