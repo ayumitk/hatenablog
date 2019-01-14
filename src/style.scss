@@ -724,7 +724,14 @@ a.breadcrumb-child-link:before {
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 4px;
+  &::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 0.5rem;
+    color: $text-blue;
+    content: "\f35a";
+  }
   &:hover{
-    background: $bg-blue;
+    background: $bg-light-blue;
   }
 }
