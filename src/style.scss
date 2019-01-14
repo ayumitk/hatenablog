@@ -732,6 +732,10 @@ a.breadcrumb-child-link:before {
     content: "\f105";
   }
   &:hover{
-    background: $bg-light-blue;
+    background: $text-blue;
+    color: #FFF;
+    &::after{
+      color: #FFF;
+    }
   }
 }
