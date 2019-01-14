@@ -198,6 +198,9 @@ h6 {
   &:active {
     color: #FFF;
     background: $bg-blue;
+    &::before {
+      color: #FFF;
+    }
   }
 }
 
@@ -738,7 +741,8 @@ a.breadcrumb-child-link:before {
     content: "\f105";
   }
   &:hover{
-    background: $text-blue;
+    background: $bg-blue;
+    border-color: $bg-blue;
     color: #FFF;
     &::after{
       color: #FFF;
