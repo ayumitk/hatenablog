@@ -229,8 +229,11 @@ h6 {
 --------------------------------------------------------- */
 .page-archive {
   .date {
-    margin: 1.5rem 1rem 0 1rem;
+    margin: 0;
     font-size: 0.9rem;
+    @media (min-width: 768px){
+      margin-top: .5rem;
+    }
 
     a {
       color: $text-gray;
@@ -243,7 +246,7 @@ h6 {
   }
 
   .entry-title {
-    margin: 0.5rem 1rem;
+    margin: 0;
   }
 
   .entry-title-link {
@@ -255,67 +258,53 @@ h6 {
     }
   }
 
-  .categories {
-    right: 1rem;
-    margin: 0 0 1rem 0;
-  }
-
   .archive-entry {
     height: auto;
     display: flex;
     flex-wrap: wrap;
     padding: 0.5rem;
+  }
 
-    .archive-entry-header {
-      order: 2;
-      margin-left: 20px;
-      width: calc(100% - 170px);
-      @media (min-width: 768px){
-        width: calc(100% - 220px);
-      }
+  .archive-entry-header {
+    order: 2;
+    margin-left: 10px;
+    width: calc(100% - 160px);
+    @media (min-width: 768px){
+      width: calc(100% - 210px);
+    }
+    @media (max-width: 575.98px) {
+      width: calc(100% - 110px);
+    }
+  }
+
+  .categories {
+    order: 3;
+    width: 100%;
+    position: relative;
+    left: 0;
+    margin: 0.5rem 0 0 0;
+
+    a {
+      margin-bottom: 0.2rem;
       @media (max-width: 575.98px) {
-        width: calc(100% - 110px);
-        margin-left: 10px;
-      }
-
-      .date {
-        margin: 0;
-      }
-
-      .entry-title {
-        margin: 0;
+        border-radius: 12px;
+        font-size: 0.65rem;
+        line-height: 24px;
+        height: 24px;
+        padding: 0 0.4rem;
       }
     }
+  }
 
-    .categories {
-      order: 3;
-      width: 100%;
-      position: relative;
-      left: 0;
-      margin: 0.5rem 0 0 0;
-
-      a {
-        margin-bottom: 0.2rem;
-        @media (max-width: 575.98px) {
-          border-radius: 12px;
-          font-size: 0.65rem;
-          line-height: 24px;
-          height: 24px;
-          padding: 0 0.4rem;
-        }
-      }
+  .entry-thumb-link {
+    order: 1;
+    float: none;
+    width: 150px;
+    @media (min-width: 768px){
+      width: 200px;
     }
-
-    .entry-thumb-link {
-      order: 1;
-      float: none;
-      width: 150px;
-      @media (min-width: 768px){
-        width: 200px;
-      }
-      @media (max-width: 575.98px) {
-        width: 100px;
-      }
+    @media (max-width: 575.98px) {
+      width: 100px;
     }
   }
 
