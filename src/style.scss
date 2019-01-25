@@ -338,7 +338,8 @@ h6 {
 --------------------------------------------------------- */
 .hatena-module {
   // PR
-  &.hatena-module-html:first-child {
+  &.hatena-module-html:first-child,
+  &.hatena-module-html:last-child {
     padding: 0;
     background: transparent;
     box-shadow: none;
@@ -654,7 +655,8 @@ h6 {
 /* -------------------------------------------------------
   Breadcrumb
 --------------------------------------------------------- */
-.breadcrumb {
+.breadcrumb,
+.page-entry .breadcrumb {
   display: none;
   color: $text-gray;
   margin: 0;
