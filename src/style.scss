@@ -269,7 +269,7 @@ h6 {
   Comment
 --------------------------------------------------------- */
 .leave-comment-title {
-  color: $text-blue;
+  color: $text-blue !important;
   font-size: 1rem;
   border-color: $text-blue;
 }
