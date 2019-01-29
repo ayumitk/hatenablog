@@ -9,6 +9,62 @@ $bg-light-blue: #f4f7f6;
 
 $border-gray: #ddd;
 
+/* -------------------------------------------------------
+  Bootstrap
+--------------------------------------------------------- */
+/* Variable overrides */
+$theme-colors: (
+  "primary": $text-blue
+);
+$enable-rounded:false;
+
+/* Required */
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+/* Optional */
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+/*
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/code";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/tables";
+@import "../node_modules/bootstrap/scss/forms";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/transitions";
+*/
+@import "../node_modules/bootstrap/scss/dropdown";
+/*
+@import "../node_modules/bootstrap/scss/button-group";
+@import "../node_modules/bootstrap/scss/input-group";
+@import "../node_modules/bootstrap/scss/custom-forms";
+*/
+@import "../node_modules/bootstrap/scss/nav";
+/*
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/card";
+@import "../node_modules/bootstrap/scss/breadcrumb";
+@import "../node_modules/bootstrap/scss/pagination";
+@import "../node_modules/bootstrap/scss/badge";
+@import "../node_modules/bootstrap/scss/jumbotron";
+@import "../node_modules/bootstrap/scss/alert";
+@import "../node_modules/bootstrap/scss/progress";
+@import "../node_modules/bootstrap/scss/media";
+@import "../node_modules/bootstrap/scss/list-group";
+@import "../node_modules/bootstrap/scss/close";
+@import "../node_modules/bootstrap/scss/modal";
+@import "../node_modules/bootstrap/scss/tooltip";
+@import "../node_modules/bootstrap/scss/popover";
+@import "../node_modules/bootstrap/scss/carousel";
+*/
+@import "../node_modules/bootstrap/scss/utilities";
+/*
+@import "../node_modules/bootstrap/scss/print"
+*/
+
 
 /* -------------------------------------------------------
   Basic
@@ -565,7 +621,7 @@ h6 {
 #global-nav {
   background: $text-black;
 
-  ul {
+  ul.nav-pills {
     margin: 0 auto;
     list-style: none;
     display: flex;
@@ -578,11 +634,11 @@ h6 {
       width: 1142px;
     }
 
-    li {
+    li.nav-item {
       list-style: none;
       flex: auto;
 
-      a {
+      a.nav-link {
         border-left: solid 1px rgba(255, 255, 255, 0.2);
         border-bottom: solid 1px rgba(255, 255, 255, 0.2);
         display: block;
@@ -600,6 +656,23 @@ h6 {
 
         &:hover {
           background: $text-blue;
+        }
+      }
+
+      .dropdown-menu{
+        background: $text-black;
+        width:100%;
+        margin-top: 0;
+        padding:0;
+
+        a.dropdown-item{
+          color: #fff;
+          padding: 0.5rem;
+          &:hover,
+          &:focus,
+          &:active {
+            background: $text-blue;
+          }
         }
       }
     }
