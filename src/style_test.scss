@@ -667,8 +667,10 @@ h6 {
 
         a.dropdown-item{
           color: #fff;
-          padding: 0.25rem 0.5rem;
-          &:hover {
+          padding: 0.5rem;
+          &:hover,
+          &:focus,
+          &:active {
             background: $text-blue;
           }
         }
