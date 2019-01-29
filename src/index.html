@@ -17,6 +17,15 @@
     </li>
     <li class="nav-item"><a class="nav-link" href="/archive/category/英語学習">英語学習</a></li>
     <li class="nav-item"><a class="nav-link" href="/archive/category/カップル">カップル</a></li>
-    <li class="nav-item"><a class="nav-link" href="/archive/category/海外移住">海外移住</a></li>
   </ul>
 </nav>
+
+<script>
+  $(function(){
+    $('.dropdown-toggle').on('click',function(){
+      $(this).next('.dropdown-menu').slideToggle('fast');
+      $(this).toggleClass('active');
+      return false;
+    });
+  });
+</script>

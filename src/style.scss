@@ -673,6 +673,9 @@ h6 {
           &:active {
             background: $text-blue;
           }
+          @media (max-width: 575.98px) {
+            font-size: 0.8rem;
+          }
         }
       }
     }
