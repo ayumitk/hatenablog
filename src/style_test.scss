@@ -621,7 +621,7 @@ h6 {
 #global-nav {
   background: $text-black;
 
-  ul {
+  ul.nav-pills {
     margin: 0 auto;
     list-style: none;
     display: flex;
@@ -634,11 +634,11 @@ h6 {
       width: 1142px;
     }
 
-    li {
+    li.nav-item {
       list-style: none;
       flex: auto;
 
-      a {
+      a.nav-link {
         border-left: solid 1px rgba(255, 255, 255, 0.2);
         border-bottom: solid 1px rgba(255, 255, 255, 0.2);
         display: block;
@@ -657,6 +657,13 @@ h6 {
         &:hover {
           background: $text-blue;
         }
+      }
+
+      .dropdown-menu{
+        background: $text-black;
+        width:100%;
+        margin-top: 0;
+        padding:0;
       }
     }
   }
