@@ -664,6 +664,14 @@ h6 {
         width:100%;
         margin-top: 0;
         padding:0;
+
+        a.dropdown-item{
+          color: #fff;
+          padding: 0.25rem 0.5rem;
+          &:hover {
+            background: $text-blue;
+          }
+        }
       }
     }
   }
