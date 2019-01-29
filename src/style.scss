@@ -791,18 +791,21 @@ a.breadcrumb-child-link:before {
   content: "\f138";
 }
 
-.pager .pager-next a {
+.pager .pager-next a,
+.pager .pager-prev a {
   border: solid 1px $text-blue;
   display: inline-block;
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 4px;
+/*
   &::after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     margin-left: 0.5rem;
     content: "\f105";
   }
+  */
   &:hover {
     background: $bg-blue;
     border-color: $bg-blue;
@@ -811,4 +814,10 @@ a.breadcrumb-child-link:before {
       color: #fff;
     }
   }
+}
+.pager .pager-next a{
+  margin-left: 0.25rem;
+}
+.pager .pager-pre a{
+  margin-right: 0.25rem;
 }
