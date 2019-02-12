@@ -796,8 +796,9 @@ a.breadcrumb-child-link:before {
   border: solid 1px $text-blue;
   display: inline-block;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
   border-radius: 4px;
+  line-height: 1.25;
 /*
   &::after {
     font-family: "Font Awesome 5 Free";
@@ -828,7 +829,7 @@ a.breadcrumb-child-link:before {
 .audible-btn{
   margin: 3rem auto;
   display: block;
-  line-height: 1.2rem;
+  line-height: 1.25;
   padding: 1rem 1.5rem;
   background: $text-pink;
   color: #FFF;
