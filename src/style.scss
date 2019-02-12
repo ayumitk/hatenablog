@@ -821,3 +821,15 @@ a.breadcrumb-child-link:before {
 .pager .pager-pre a{
   margin-right: 0.25rem;
 }
+
+/* -------------------------------------------------------
+  Audible
+--------------------------------------------------------- */
+.audible-btn{
+  margin: 3rem auto;
+  display: block;
+  line-height: 1.2rem;
+  padding: 1rem 1.5rem;
+  background: $text-pink;
+  color: #FFF;
+}
