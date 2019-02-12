@@ -827,10 +827,20 @@ a.breadcrumb-child-link:before {
   Audible
 --------------------------------------------------------- */
 .audible-btn{
-  margin: 3rem auto;
-  display: block;
-  line-height: 1.25;
-  padding: 1rem 1.5rem;
-  background: $text-pink;
-  color: #FFF;
+  text-align: center;
+  a{
+    margin: 0;
+    display: block;
+    line-height: 1.25;
+    padding: 1rem 1.5rem;
+    background: $text-pink;
+    color: #FFF;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    &:hover{
+      text-decoration: none;
+      color: #FFF;
+      opacity: 0.9;
+    }
+  }
 }
