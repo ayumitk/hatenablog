@@ -830,7 +830,7 @@ a.breadcrumb-child-link:before {
   text-align: center;
   a{
     margin: 0;
-    display: block;
+    display: inline-block;
     line-height: 1.25;
     padding: 1rem 1.5rem;
     background: $text-pink;
