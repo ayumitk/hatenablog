@@ -266,15 +266,6 @@ h6 {
 }
 
 /* -------------------------------------------------------
-  Comment
---------------------------------------------------------- */
-.leave-comment-title {
-  color: $text-blue !important;
-  font-size: 1rem;
-  border-color: $text-blue;
-}
-
-/* -------------------------------------------------------
   Footer
 --------------------------------------------------------- */
 #copyright {
@@ -528,8 +519,6 @@ h6 {
   }
 
   .entry-content {
-    // line-height: 1.8;
-    // font-size: 110%;
     p:not(.hatena-asin-detail-title) {
       line-height: 2;
       margin: 0 0 0.5em;
@@ -558,7 +547,7 @@ h6 {
     h4 {
       font-size: 150%;
       color: $text-blue;
-      margin: 1.5em 0 0.5em 0;
+      margin: 1.5em 0 1em 0;
       line-height: 1.2;
       padding: 0;
       border: 0;
@@ -843,4 +832,18 @@ a.breadcrumb-child-link:before {
       opacity: 0.9;
     }
   }
+}
+
+
+/* -------------------------------------------------------
+  Comment
+--------------------------------------------------------- */
+.leave-comment-title {
+  color: $text-blue !important;
+  font-size: 1rem;
+  border-color: $text-blue;
+}
+
+.comment-content p{
+  margin-bottom: 1.5rem;
 }
