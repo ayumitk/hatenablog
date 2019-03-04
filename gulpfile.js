@@ -1,19 +1,12 @@
 // Gulp
 const gulp = require('gulp');
 
-// Local server
-// const browserSync = require("browser-sync").create();
-
 // CSS
-const plumber = require("gulp-plumber");
-const notify = require("gulp-notify");
-const autoprefixer = require("gulp-autoprefixer");
-const csscomb = require("gulp-csscomb");
+const plumber = require('gulp-plumber');
+const notify = require('gulp-notify');
+const autoprefixer = require('gulp-autoprefixer');
+const csscomb = require('gulp-csscomb');
 const sass = require('gulp-sass');
-
-
-// HTML minify
-// const htmlmin = require("gulp-htmlmin");
 
 // --------------------------------------------------------------------
 // Tasks
